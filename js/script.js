@@ -20,10 +20,13 @@ console.log(tuaParola,palindromo);
 
 // Definisco la funzione ---------------------------------------------
 function checkPalindromo (parola) {
+    //metodo 1
     var inverso =""
     for (i=parola.length-1;i>=0;i--) {
         inverso += parola[i];
     }
+    // //metodo 2
+    // var inverso = parola.split('').reverse().join('')
     if (parola.toLowerCase()==inverso.toLowerCase()) {
         return 'E\' palindroma'
     } else {
